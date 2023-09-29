@@ -1,0 +1,266 @@
+
+* {
+  box-sizing: border-box;
+}
+body
+{   
+    height: 100vh;
+    width: 1000px;
+    margin: auto;
+    margin-top: 0%;
+}
+
+.family
+{   
+    display: grid;
+    background-color: aqua;
+    height: 40rem;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    'one two'
+    'one three';
+    
+}
+.familyone{
+    grid-area: one;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #C7DDEA;
+    background-image: url(picture/family.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 15rem 20rem;
+}
+h1{
+    width: 62%;
+    font-size: 2.5rem;
+}
+p{
+    width: 62%;
+    font-family: "Arial";
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.white{
+    color: white;
+    margin: 0;
+}
+.familybtn{
+    flex-direction: row;
+    align-self:center;
+    margin-top: 6rem;
+}
+.two{
+    grid-area: two;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #F17949;
+
+}
+.three{
+    grid-area: three;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #FFB939;
+}
+.nav-list{
+    display: flex;
+    font-family: 'Frank Ruhl Libre', serif;
+    justify-content: space-evenly;
+    margin: 1rem;
+    padding: 0;
+    list-style: none;
+    font-weight: bold;
+    color: gray;
+}
+.colorBlack{color: black;}
+.card-section {
+    display: flex;
+    flex-direction: column;
+    height: 75rem;
+    background: linear-gradient(#A9A19E 50%, #FAB131 50%);
+}
+
+.gray {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #A9A19E;
+}
+.grayright{
+    flex-direction: row;
+}
+.gray h2 {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 100%;
+    margin-left: 6rem;
+    width: 50%;
+    color: #FFFFFF;
+}
+
+.gray a {
+    color: rgba(0, 0, 0, 0.8);
+    background-color: white;
+    margin: 8rem;
+    padding: 1rem;
+    width: 10%;
+    border-radius: 40px;
+    text-decoration: none;
+    font-family: "Fira Sans";
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+}
+
+.gray p {
+    margin: 6rem 5rem 3rem 0 ;
+    width: 45%;
+}
+.cards {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.cards p {
+  font-size: small;
+  line-height: 19px;
+  margin-top: 0;
+  width:80%;
+  color: gray;
+  text-align: center;
+}
+.card h3{
+    background-color: red;
+    margin-bottom: 0;
+}
+
+.card-img {
+    position: relative;
+    top: -20px;
+    margin-bottom: -10px;
+    width: 90%;
+    height: 150px;
+    background-size: 39%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.card1, .card2, .card3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 17rem;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 35px;
+}
+
+.card1 .card-img {
+    background-image: url(picture/child.png);
+    background-color: #C7DDEA;
+    background-position-y: 10px;
+}
+
+.card2 .card-img {
+    background-image: url(picture/adult.png);
+    background-color: #FAB131;
+    background-position-y: 20px;
+}
+
+
+.card3 .card-img {
+    background-image: url(picture/old.png);
+    background-color: #F17949;
+    background-position-y: 20px;
+    background-size: 60%;
+}
+.yellow{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+.yellow h2{
+    color: white;
+    font-size: xxx-large;
+    font-family: "Frank Ruhl Libre";
+}
+
+.how
+{   
+    display: grid;
+    background-color: pink;
+    height: 40rem;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'item1 item2 item3'
+    'item4 item5 item6';
+}
+.flex{
+    display: flex;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.flex p{
+    margin-top: 30%;
+    width:16rem;
+    color: black;
+}
+.item1 p{
+    font-family: 'Frank Ruhl Libre';
+   font-size: xxx-large;
+   line-height: 45px;
+   margin:32% 0 0 0;
+     width: 9rem;
+}
+h3{
+    margin-inline-start: -15rem;
+    font-family: 'Frank Ruhl Libre';
+    margin-bottom: 0;
+    color: gray;
+    font-size: xx-large;
+
+}
+.item1{
+    background-color: #C7DDEA;
+}
+.item3{
+    background-color: #EBEBEB;
+}
+.item5{
+    background-color: #F17949;
+}
+
+footer
+{
+    background-color: #A9A19E;
+    display: flex;
+    background-image: url(picture/chevrons-up.svg);
+    background-position: center top;
+    background-repeat:no-repeat;
+    font-family: 'Fira Sans';
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 4rem;
+    width: 100%;
+}
